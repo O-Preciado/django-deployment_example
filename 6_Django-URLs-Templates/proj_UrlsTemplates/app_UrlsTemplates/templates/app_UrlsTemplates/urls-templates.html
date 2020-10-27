@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}<!--Línea para cargar contenido estático dentro del Proyecto-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Urls-Templates</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Página Urls-Templates</h1>
+                <a href="{% url 'app_UrlsTemplates:other' %}">La página "other".</a><br>
+                <a href="{% url 'admin:index' %}">Link a Administrador.</a><br>
+                <a href="{% url 'index' %}">Link a Index.</a>
+
+            </div>
+        </div>
+
+        <script src="" async defer></script>
+    </body>
+</html>

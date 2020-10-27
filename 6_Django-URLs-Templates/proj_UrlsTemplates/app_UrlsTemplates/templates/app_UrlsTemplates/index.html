@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "app_UrlsTemplates/base.html" %}
+    {% block body_block %}
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Página Home</h1>
+                <h2>Este es el archivo index.html </h2><br>
+                <!--<h3>{{ text |upper }}</h3> <!--|upper=filtro -->
+                <h3>{{ text |cut:'mundo' }}</h3> <!--|cut=filtro customizado -->
+                <h3>{{ number|add:"99" }}</h3> <!--|add:"99"=filtro -->
+            </div>
+        </div>
+    {% endblock %}
